@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<link rel="stylesheet" href="loginstyle.css" type="text/css">
+	<style type="text/css">
+		p { margin-top:10px; text-align:justify; }
+	</style>
+</head>
+<body bgcolor="#E1F7FF">
+
+<div id="map"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(22.323333, 114.172361);
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    animation: google.maps.Animation.BOUNCE
+  });
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<div class="contact">
+  <p>Address  : Rm399, 3/F, MOKO square, Mong Kok</p>
+  <p>Open hour: Mondays to Saturdays 0900-1700; Closed on Sundays and public holidays</p> 
+  <p>Telephone: +852 2760 0393</p>
+  <p>Fax      : +852 2761 0166</p>
+  <p>Email    : <a href="mailto:info@ec-hkkcc.org.hk">info@ec-hkkcc.org.hk</a></p>
+  <p>Follow us on 	
+  <a href="http://www.facebook.com/caringcom/" target="_blank">
+  <img src="footerfb.jpg" alt="Facebook" width="25" height="25" /> </a> 
+  <a href="http://www.youtube.com/user/IowaCitySCTV" target="_blank">
+  <img src="footeryt.jpg" alt="YouTube" width="25" height="24" /> </a>  
+  <a href="https://twitter.com/homeinstead" target="_blank">
+	<img src="footertw.jpg" height="25" width="25" /></a></p>
+</div>
+</body>
+</html>

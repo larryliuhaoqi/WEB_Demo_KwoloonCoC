@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" href="index.css" type="text/css">
+	
+	<style type="text/css">
+		p { margin-top:10px; text-align:center; }
+		label.choices {vertical-align: text-top; }
+		#email {margin-top:10px; size:20px; }
+	</style>
+</head>
+<body bgcolor="#E1F7FF">
+	
+	<h2>Activities Registration</h2>
+    <fieldset>
+	<form method="post" action="new_index.html">
+	
+    	<h3><p id="pi"><b><u>Personal Information</u></b></p></h3>
+    	
+	        <label for="firstname">First Name: </label>
+	        <input type="input" name="firstname" placeholder="Tai Man" required />
+    	    <br/><br/>
+        	<label for="lastname">Last Name: </label>
+        	<input type="input" name="lastname" placeholder="Chan" required />
+        	<br/><br/>
+     	 	Gender: 
+     	 		<input type="radio" name="gender" value="male" checked> Male
+  				<input type="radio" name="gender" value="female"> Female
+			<br/><br/>
+           	<label for="datainput">Date of birth: </label>
+        	<input type="date" name="datein" id="dateinput" placeholder="mm/dd/yyyy" required />
+       		<br/><br/>
+       		<label for="telinput">Telephone Number: </label>
+       		<input type="tel" name="telin" id="telinput" placeholder="#### ####" pattern="\d{4} \d{4}" required />
+       		<br/><br/>
+       		<label for="email">Email: </label>
+       		<input type="email" id="email" placeholder="yourmail@abc.com" />
+       		<br/><br/>
+       		<label for="address">Address: </label>
+        	<input type="input" name="address" size="100px" required />
+        	<br/><br/>
+        	Region:
+     	 		<input type="radio" name="region" value="mongkok" checked> Mong Kok
+  				<input type="radio" name="region" value="kowlooncity"> Kowloon City
+  				<input type="radio" name="region" value="other"> Other:
+  				<input type="input" name="region" placeholder="New Territories" >
+        <hr/>
+        
+        <h3><p id="ar"><b><u>Activities Registration</u></b></p></h3>
+            <label class="choices" > 1st Choice: </label>
+            <select name="choice" size="8" >
+  				<optgroup label="Class">
+  				<option value="chess">Chess Class</option>
+  				<option value="taichi">Tai Chi Class</option>
+  				</optgroup>
+  				<optgroup label="Performance">
+  				<option value="variety">Variety shows</option>
+  				<option value="film">Film shows</option>
+  				</optgroup>
+				<optgroup label="Day Trip">
+  				<option value="trip">Day Trip</option>
+  				</optgroup>
+			</select>
+            <label class="choices"> 2nd Choice: </label>
+        	<select name="choice" size="8" >
+  				<optgroup label="Class">
+  				<option value="chess">Chess Class</option>
+  				<option value="taichi">Tai Chi Class</option>
+  				</optgroup>
+  				<optgroup label="Performance">
+  				<option value="variety">Variety shows</option>
+  				<option value="film">Film shows</option>
+  				</optgroup>
+  				<optgroup label="Day Trip">
+				<option value="trip">Day Trip</option>
+  				</optgroup>
+			</select>
+            <label class="choices"> 3rd Choice: </label>
+            <select name="choice" size="8" >
+  				<optgroup label="Class">
+  				<option value="chess">Chess Class</option>
+  				<option value="taichi">Tai Chi Class</option>
+  				</optgroup>
+  				<optgroup label="Performance">
+  				<option value="variety">Variety shows</option>
+  				<option value="film">Film shows</option>
+  				</optgroup>
+  				<optgroup label="Day Trip">
+  				<option value="trip">Day Trip</option>
+  				</optgroup>
+			</select>
+			<br/><br/>
+			<p><strong>------Select your choice according to your prioritization------</strong></p>
+        <hr/>
+        
+        <h3><p id="ec"><b><u>Emergency contact</u></b></p></h3>
+        	<label for="emergfname">First Name: </label>
+	        <input type="input" name="firstname" placeholder="Siu Ming" required />
+            <br/><br/>
+	        <label for="emerglname">Last Name: </label>
+	        <input type="input" name="lastname" placeholder="Li" required />
+	        <br/><br/>
+            <label for="emergtel">Contact Number: </label>
+	        <input type="tel" name="telin" id="telinput" placeholder="#### ####" pattern="\d{4} \d{4}" required />
+	        <br/><br/>
+	        <label for="emergrelat">Relationship: </label>
+	        <input type="input" name="relation" placeholder="son/daughter" required />
+        <hr/>
+        <label for="username">Username: </label>
+	        <input type="input" name="username" required />
+	        <!-- Users need to login here by entering their username. Attribute "required" is used for checking this field is filled. -->
+            <br /><br />
+            <label for="password">Password: </label>
+	        <input type="password" name="userpw" required />
+            <br />
+            <label for="password">Repeat your Password: </label>
+	        <input type="password" name="userpw" required />
+        	<br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <br/><br/>
+        Copyright &copy; 2016 Elderly Center of Kowloon Chamber of Commerce. All rights reserved.
+	</form>
+	</fieldset>
+
+</body>
+</html>
+

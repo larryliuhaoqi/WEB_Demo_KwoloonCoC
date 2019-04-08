@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet" href="loginstyle.css" type="text/css">
+<style type="text/css">
+</style>
+</head>
+
+<body id="index_body">
+<div class="index_body_p">
+  <p>Welcome to The Mongkok Kai-fong Association <h2>Kowloon Chamber of Commerce Centre</h2> for the Elderly! We provide the most sincere, and  professional services for the elderly. Our Center provides many kinds of activities for the elderly, come to join us and have fun! </p>
+</div>
+<div class="index_body_img">
+  <p><img src="banner2.jpg" ></p>
+</div>
+<div class="index_body_wel">
+<p>Welcome to Elder Home!
+ 	  <a href="#loginform" 
+      onclick="document.getElementById('id01').style.display='block'" 
+      style="width:auto;"><b style="color:#69A0EB">Login</b></a> to use more function!</p>
+      </div>
+      
+<!-- -------------------------- Login form ----------------------- -->
+<div id="id01" class="modal">
+    
+  <form class="modal-content animate" action="indexbody.html" >
+      <div class="loginimg">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close">&times;
+      </span>
+      
+      <img src="loginavatar.jpg" alt="Avatar" class="avatar" height="220px">
+      </div>
+	
+    <!-- ---------------------- Enter username ------------------ -->
+	  <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" 
+      name="uname" required/>
+
+      <!-- --------------------- Enter password ------------------- -->
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" 
+      name="signin" required/>
+      
+      <!-- --- Ask if vistors want to save record for next login --- --> 
+      <input type="checkbox"> Remember me 
+      <button type="submit" class="loginbtn">Login</button>
+      </div>
+	  
+      <!-- --------------- Close the login form ------------------- -->
+      <div class="container" style="background-color:#f1f1f1">
+      <button type="button" 
+      onclick="document.getElementById('id01').style.display='none'" 
+      class="cancelbtn">Cancel
+      </button>
+      
+      <!-- -------- Ask if visitor want to create an account -------- -->
+      <span class="signin">Not registered? 
+      <a href="form.html" target="_new">Create an account</a>
+      </span>
+      </div>
+  </form>
+</div>
+<script>
+	// Get the modal form
+	var modal = document.getElementById('id01');
+
+	// Close the login form when the visitor clicks anywhere outside the modal
+	window.onclick = function(event) {
+    if (event.target == modal) 
+	
+       { modal.style.display = "none";}
+	
+	}
+</script>
+</body>
+</html>

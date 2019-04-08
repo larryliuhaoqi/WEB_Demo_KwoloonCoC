@@ -1,0 +1,8 @@
+input[type=button] {
+    background-color: #D5EAFF;
+    cursor: pointer;
+}
+
+form {
+	margin: 0 5px;
+}

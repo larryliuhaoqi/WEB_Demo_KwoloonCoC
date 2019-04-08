@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css" type="text/css">
+<link rel="stylesheet" href="piczoomstyle.css" type="text/css">
+<title>Variety show</title>
+<!-- ------------ Function of the zoom in picture ------------ -->
+	<script>
+	// Get the modal form
+	var modal1 = document.getElementById('id08');
+	var modal1 = document.getElementById('id09');
+	var modal1 = document.getElementById('id10');
+	// Close the login form wwen the visitor clicks anywhere outside the modal
+	window.onclick = function(event) {
+    if (event.target == modal1) 
+       { modal1.style.display = "none";}
+	}
+	</script>
+</head>
+<body  bgcolor="#E1F7FF">	
+<!-- ------------------ Description of the event ----------------- -->
+      <h2>Variety show</h2>
+      <p>We held different variety show to entertain the elderly, including some drama show, magic show, and the singing performance. They are really enjoy the show!</p>
+      
+<!-- ---------------------- Zoomed picture #1 -------------------- -->
+      <a href="#zoom"
+      onclick="document.getElementById('id08').style.display='block'"> 
+      <img src="reportmedia/dramashow1.jpg" alt="variety1" class="normal">
+      </a>
+      
+   <div id="id08" class="modal1">
+    
+  	<form class="modal1-content animate">
+     <!-- ---------------- Close the picture #1 ---------------- -->
+      <span onclick="document.getElementById('id08').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/dramashow1.jpg" alt="variety1" class="zoom">
+   	</form>  
+            
+   </div> 
+    
+<!-- -------------------- Zoomed picture #2 ----------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id09').style.display='block'"> 
+      <img src="reportmedia/dramashow2.jpg" alt="variety2" class="normal">
+      </a>
+      
+    <div id="id09" class="modal1">
+    
+  	 <form class="modal1-content animate">
+     <!-- ---------------- Close the picture #2 ---------------- -->
+      <span onclick="document.getElementById('id09').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/dramashow2.jpg" alt="variety2" class="zoom">
+      </div>
+      </form> 
+           
+	</div>
+
+<!-- -------------------- Zoomed picture #3 ----------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id10').style.display='block'"> 
+      <img src="reportmedia/magicshow1.jpg" alt="variety3" class="normal">
+      </a>
+      
+    <div id="id10" class="modal1">
+    
+  	 <form class="modal1-content animate">
+     <!-- ---------------- Close the picture #3 ---------------- -->
+      <span onclick="document.getElementById('id10').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/magicshow1.jpg" alt="variety3" class="zoom">
+      </div>
+      </form>
+      <br/><br/>
+           
+	</div>
+
+<!-- ----- Video#1 can be view when the visitor press to start ----- -->
+  <p class="highlight">Check out the highlights here: </p>
+    <video controls height="300" width"450">
+     <source src="reportmedia/dramashow0.webm" type="video/webm"/>
+     <source src="reportmedia/dramashow0.ogg" type="video/ogg"/>
+     <source src="reportmedia/dramashow0.mp4" type="video/mp4"/>
+     <source src="reportmedia/dramashow0.flv" type="video/flv"/>
+     <source src="reportmedia/dramashow0.mov" type="video/mov"/>
+     <embed src="reportmedia/dramashow0.mp4" height="240" width="320">
+     </embed>
+     <object src="reportmedia/dramashow0.mp4" height="240" width="320">
+     </object>
+    </video>  <br/>
+    
+    <!-- ---------------- Video #2 ---------------- -->
+    <video controls height="300" width"450">
+     <source src="reportmedia/singingshow0.webm" type="video/webm"/>
+     <source src="reportmedia/singingshow0.ogg" type="video/ogg"/>
+     <source src="reportmedia/singingshow0.mp4" type="video/mp4"/>
+     <source src="reportmedia/singingshow0.flv" type="video/flv"/>
+     <source src="reportmedia/singingshow0.mov" type="video/mov"/>
+     <embed src="reportmedia/singingshow0.mp4" height="240" width="320">
+     </embed>
+     <object src="reportmedia/singingshow0.mp4" height="240" width="320">
+     </object>
+    </video>  <br/>
+    
+    <!-- ---------------- Video #3 ---------------- -->
+    <video controls height="300" width"450">
+     <source src="reportmedia/magicshow0.webm" type="video/webm"/>
+     <source src="reportmedia/magicshow0.ogg" type="video/ogg"/>
+     <source src="reportmedia/magicshow0.mp4" type="video/mp4"/>
+     <source src="reportmedia/magicshow0.flv" type="video/flv"/>
+     <source src="reportmedia/magicshow0.mov" type="video/mov"/>
+     <embed src="reportmedia/magicshow0.mp4" height="240" width="320">
+     </embed>
+     <object src="reportmedia/magicshow0.mp4" height="240" width="320">
+     </object>
+    </video>
+
+<!-- --- Users can press the back button to the previous page --- -->
+	<script>
+	function goBack() {
+    window.location.href = "report.html";
+	}
+	</script>
+    <br/><br/>
+    <button onclick="goBack()" class="backbtn">Back</button>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css" type="text/css">
+<link rel="stylesheet" href="piczoomstyle.css" type="text/css">
+<title>Tai Chi class</title>
+<!-- ------------ Function of the zoom in picture ------------ -->
+	<script>
+	// Get the modal form
+	var modal1 = document.getElementById('id05');
+	var modal1 = document.getElementById('id06');
+	var modal1 = document.getElementById('id07');
+	// Close the login form wwen the visitor clicks anywhere outside the modal
+	window.onclick = function(event) {
+    if (event.target == modal1) 
+       { modal1.style.display = "none";}
+	}
+	</script>
+</head>
+<body  bgcolor="#E1F7FF">	
+<!-- ------------------ Description of the event ----------------- -->
+      <h2>Tai Chi class</h2>
+      <p>Tai Chi can enchance strength resistance training to our lifestyle, the lessons teaches you to have relaxation necessary in order to cope with anxiety symptoms. This especially include some fixed step push hands exercise.</p>
+      
+<!-- ---------------------- Zoomed picture #1 -------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id05').style.display='block'"> 
+      <img src="reportmedia/taichi1.jpg" alt="taichi1" class="normal">
+      </a>
+      
+   <div id="id05" class="modal1">
+    
+  	<form class="modal1-content animate">
+     <!-- ---------------- Close the picture #1 ---------------- -->
+      <span onclick="document.getElementById('id05').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/taichi1.jpg" alt="taichi1" class="zoom">
+   	</form>  
+            
+   </div> 
+    
+<!-- -------------------- Zoomed picture #2 ----------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id06').style.display='block'"> 
+      <img src="reportmedia/taichi2.jpg" alt="taichi2" class="normal">
+      </a>
+      
+    <div id="id06" class="modal1">
+    
+  	 <form class="modal1-content animate">
+     <!-- ---------------- Close the picture #2 ---------------- -->
+      <span onclick="document.getElementById('id06').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/taichi2.jpg" alt="taichi2" class="zoom">
+      </div>
+      </form> 
+      <br/><br/>
+           
+	</div>
+
+<!-- ----- Video can be view when the visitor press to start ----- -->
+  <p class="highlight">Check out the highlights here: </p>
+    <video controls height="300" width"450">
+     <source src="reportmedia/taichi0.webm" type="video/webm"/>
+     <source src="reportmedia/taichi0.ogg" type="video/ogg"/>
+     <source src="reportmedia/taichi0.mp4" type="video/mp4"/>
+     <source src="reportmedia/taichi0.flv" type="video/flv"/>
+     <source src="reportmedia/taichi0.mov" type="video/mov"/>
+     <embed src="reportmedia/taichi0.mp4" height="240" width="320">
+     </embed>
+     <object src="reportmedia/Horse.mp4" height="240" width="320">
+     </object>
+    </video>
+
+<!-- --- Users can press the back button to the previous page --- -->
+	<script>
+
+	function goBack() {
+    window.location.href = "report.html";
+	}
+	</script>
+    <br/><br/>
+    <button onclick="goBack()" class="backbtn">Back</button>
+    
+</body>
+</html>

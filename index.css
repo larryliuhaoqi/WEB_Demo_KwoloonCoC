@@ -1,0 +1,79 @@
+/* Styles of the menu bar */
+table {
+  
+}
+
+#maincon {
+	color:red;
+}
+
+h1 {
+    color:blue;
+}
+
+/* Styles of the menu list ---------------------------------------------------------------*/
+.nav {
+	width:auto; 
+	height:auto; 
+	position:absolute; 
+	top:0; 
+	left:10%; 
+	z-index:0;
+	}
+.nav ul { 
+	list-style:none;
+	padding:0; 
+	margin:0 ;
+}
+
+.nav li { 
+	float:left ; 
+	width:170px;
+	height:25px;
+	background-color:#0A35BF; 
+	color:white; text-align:center;
+	border-right:solid white; 
+}
+
+.nav li ul li {
+	float:none;
+	text-align:center;
+	padding:0px;
+}
+
+.nav a  {
+	text-decoration:none;
+	color:white;
+}
+			   
+.nav li:hover  {
+	background-color:#0014F9;
+	font-weight: bold;
+}
+	   
+.nav li ul {
+	display:none; 
+}
+	   
+.nav li:hover ul {
+	display:inline;
+}
+/*End of Menu-----------------------------------------------------------------------*/  
+/*Index Body------------------------------------------------------------------------*/	   
+.index_body_p { background:white; width:20%; height:60%; position:absolute; top:5%; left:78%; z-index:1; }
+.index_body_img {  position:absolute; top:0; left:0; z-index:0; }
+.index_body_wel { background:#0A35BF; width:100%; height:10%; position:absolute; top:80%; left:0%; z-index:0; text-align:center; color:white;}
+.login { background-color:#FF191C; color:white; text-align:center; font:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; font-weight:bold; width:10%; height:15%; position:absolute; top: 0; left:86%; z-index:1; }
+.index_menu_banner { position:absolute; top:17%; left:100;}
+.index_menu_logo { width:100%; height:0; position:absolute; top:17%; left:60%;}
+.index_menu_mar { scrollamount:7; width:100%; height:0; position:absolute; top:90%; left:0%; 1}
+/*End of Index Body-----------------------------------------------------------------*/
+/*Footer----------------------------------------------------------------------------*/
+#footer {
+	text-align:center;
+	}
+/*End of Footer---------------------------------------------------------------------*/
+/*ContactUs-------------------------------------------------------------------------*/
+#map { width:50%; height:100%; position:absolute; top:0; left:0;}
+.contact {width:40%; height:100%; position:absolute; top:10%; left:55%;}
+/*End of ContactUs------------------------------------------------------------------*/

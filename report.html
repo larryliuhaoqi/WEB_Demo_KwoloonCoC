@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Event Blog</title>
+<link rel="stylesheet" href="index.css" type="text/css">
+<link rel="stylesheet" href="reportstyle.css" type="text/css">
+</head>
+<body bgcolor="#E1F7FF">
+
+      <!-- --------------- Search function of the form --------------- -->
+		<script>
+		function surfto(form) 
+ 		 {
+ 		 var myindex=form.month.selectedIndex
+ 		 window.open(form.month.options[myindex].value, "_self");
+ 		 }
+		</script>
+       <!-- --------------- list of form --------------- --> 
+		<p>Search Event</p>
+		<form name="myform">
+ 		 <select name="month" size=1>
+         <optgroup label="Class">
+  		 <option value="chess.html">Chess
+  		 <option value="taichi.html">Tai Chi 
+         </optgroup>
+         
+         <optgroup label="Performance">
+   		 <option value="variety.html">Variety shows
+   		 <option value="film.html">Film shows
+   		
+ 		 </select>
+  		<input type="button" value="Search" onClick="surfto(this.form)">
+		</form>
+<img src="reportmedia/report1.jpg" width="50%" 
+      style="margin-left:5px">

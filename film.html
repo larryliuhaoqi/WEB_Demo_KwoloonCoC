@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css" type="text/css">
+<link rel="stylesheet" href="piczoomstyle.css" type="text/css">
+<title>Film show</title>
+<!-- ------------ Function of the zoom in picture ------------ -->
+	<script>
+	// Get the modal form
+	var modal1 = document.getElementById('id11');
+	var modal1 = document.getElementById('id12');
+	var modal1 = document.getElementById('id13');
+	// Close the login form wwen the visitor clicks anywhere outside the modal
+	window.onclick = function(event) {
+    if (event.target == modal1) 
+       { modal1.style.display = "none";}
+	}
+	</script>
+</head>
+<body  bgcolor="#E1F7FF">	
+<!-- ------------------ Description of the event ----------------- -->
+      <h2>Film show</h2>
+      <p>Every month we held a film show in our Center. We provide some snacks and drinks for the elderly, so they can enjoy them during the film. Let's come to join us at the next film show!</p>
+      
+<!-- ---------------------- Zoomed picture #1 -------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id11').style.display='block'"> 
+      <img src="reportmedia/film1.jpg" alt="film1" width="200" 
+      height="250" style="margin-left: 50px">
+      </a>
+      
+   <div id="id11" class="modal1">
+    
+  	<form class="modal1-content animate">
+     <!-- ---------------- Close the picture #1 ---------------- -->
+      <span onclick="document.getElementById('id11').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/film1.jpg" alt="film1" class="vzoom">
+   	</form>  
+            
+   </div> 
+    
+<!-- -------------------- Zoomed picture #2 ----------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id12').style.display='block'"> 
+      <img src="reportmedia/film2.jpg" alt="film2" class="normal">
+      </a>
+      
+    <div id="id12" class="modal1">
+    
+  	 <form class="modal1-content animate">
+     <!-- ---------------- Close the picture #2 ---------------- -->
+      <span onclick="document.getElementById('id12').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/film2.jpg" alt="film2" class="zoom">
+      </div>
+      </form> 
+           
+	</div>
+
+<!-- -------------------- Zoomed picture #3 ----------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id13').style.display='block'"> 
+      <img src="reportmedia/film3.jpg" alt="film3" class="normal">
+      </a>
+      
+    <div id="id13" class="modal1">
+    
+  	 <form class="modal1-content animate">
+     <!-- ---------------- Close the picture #3 ---------------- -->
+      <span onclick="document.getElementById('id13').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/film3.jpg" alt="film3" class="zoom">
+      </div>
+      </form>
+      <br/><br/>
+           
+	</div>
+
+<!-- ----- Video can be view when the visitor press to start ----- -->
+  <p class="highlight">Check out the highlights here: </p>
+    <video controls height="300" width"450">
+     <source src="reportmedia/film0.webm" type="video/webm"/>
+     <source src="reportmedia/film0.ogg" type="video/ogg"/>
+     <source src="reportmedia/film0.mp4" type="video/mp4"/>
+     <source src="reportmedia/film0.flv" type="video/flv"/>
+     <source src="reportmedia/film0.mov" type="video/mov"/>
+     <embed src="reportmedia/film0.mp4" height="240" width="320">
+     </embed>
+     <object src="reportmedia/Horse.mp4" height="240" width="320">
+     </object>
+    </video>
+
+<!-- --- Users can press the back button to the previous page --- -->
+	<script>
+	function goBack() {
+   window.location.href = "report.html";
+	}
+	</script>
+    <br/><br/>
+    <button onclick="goBack()" class="backbtn">Back</button>
+    
+</body>
+</html>

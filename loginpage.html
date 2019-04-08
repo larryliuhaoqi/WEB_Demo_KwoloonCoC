@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet" href="loginstyle.css" type="text/css">
+
+  <script type="text/javascript">
+     function codeAddress() {
+       document.getElementById('id01').style.display='block';
+     }
+       window.onload = codeAddress;
+  </script>
+</head>
+
+
+<body bgcolor="#E1F7FF">
+<div id="id01" class="modal">
+    
+  <form class="modal-content animate" action="indexbody.html">
+      <div class="loginimg">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close">&times;
+      </span>
+      
+      <img src="loginavatar.jpg" alt="Avatar" class="avatar" height="220px">
+      </div>
+	
+    <!-- ---------------------- Enter username ------------------ -->
+	  <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" 
+      name="uname" required/>
+
+      <!-- --------------------- Enter password ------------------- -->
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" 
+      name="signin" required/>
+      
+      <!-- --- Ask if vistors want to save record for next login --- --> 
+      <input type="checkbox"> Remember me 
+      <button type="submit" class="loginbtn">Login</button>
+      </div>
+	  
+      <!-- --------------- Close the login form ------------------- -->
+      <div class="container" style="background-color:#f1f1f1">
+      <button type="button"  class="cancelbtn"><a href="indexbody.html" target="main">Cancel</a> </button>
+      
+      <!-- -------- Ask if visitor want to create an account -------- -->
+      <span class="signin">Not registered? <a href="form.html" target="_new">Create an account</a>
+      </span>
+      </div>
+  </form>
+   
+</div>
+<script>
+	// Get the modal form
+	var modal = document.getElementById('id01');	
+</script>
+
+</body>
+</html>

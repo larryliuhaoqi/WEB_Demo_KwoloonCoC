@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css" type="text/css">
+<link rel="stylesheet" href="piczoomstyle.css" type="text/css">
+<title>Chess class</title>
+<!-- ------------ Function of the zoom in picture ------------ -->
+	<script>
+	// Get the modal form
+	var modal1 = document.getElementById('id02');
+	var modal1 = document.getElementById('id03');
+	var modal1 = document.getElementById('id04');
+	// Close the login form wwen the visitor clicks anywhere outside the modal
+	window.onclick = function(event) {
+    if (event.target == modal1) 
+       { modal1.style.display = "none";}
+	}
+	</script>
+</head>
+<body  bgcolor="#E1F7FF">	
+<!-- ------------------ Description of the event ----------------- -->
+      <h2>Chess class</h2>
+      <p>Chess is an increasingly activity of most of the elderly. Our center held chess classes to teach the elderly the technique of playing chess. In the lesson, they are having fun when playing chess! </p>
+      
+<!-- ---------------------- Zoomed picture #1 -------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id02').style.display='block'"> 
+      <img src="reportmedia/chess1.jpg" alt="chess1" class="normal">
+      </a>
+      
+   <div id="id02" class="modal1">
+    
+  	<form class="modal1-content animate">
+     <!-- ---------------- Close the picture #1 ---------------- -->
+      <span onclick="document.getElementById('id02').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/chess1.jpg" alt="chess1" class="zoom">
+   	</form>  
+            
+   </div> 
+    
+<!-- -------------------- Zoomed picture #2 ----------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id03').style.display='block'"> 
+      <img src="reportmedia/chess2.jpg" alt="Avatar" class="normal">
+      </a>
+      
+    <div id="id03" class="modal1">
+    
+  	 <form class="modal1-content animate">
+     <!-- ---------------- Close the picture #2 ---------------- -->
+      <span onclick="document.getElementById('id03').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/chess2.jpg" alt="Avatar" class="zoom">
+      </div>
+      </form> 
+           
+	</div>
+
+<!-- -------------------- Zoomed picture #3 ----------------------- -->
+      <a href="#zoom" 
+      onclick="document.getElementById('id04').style.display='block'"> 
+      <img src="reportmedia/chess3.jpg" alt="Avatar" class="normal">
+      </a>
+      
+    <div id="id04" class="modal1">
+    
+  	 <form class="modal1-content animate">
+     <!-- ---------------- Close the picture #3 ---------------- -->
+      <span onclick="document.getElementById('id04').style.display='none'"
+      class="closepic" title="Close">&times;
+      </span>
+      
+      <img src="reportmedia/chess3.jpg" alt="Avatar" class="zoom">
+      </div>
+      </form>
+      <br/><br/>
+           
+	</div>
+    
+<!-- ------------------- Auto-play Audio ------------------ -->
+    <audio autoplay="autoplay" controls>
+	<source src="reportmedia/chess0.mp3" type="audio/mp3"/>
+	<source src="reportmedia/chess0.ogg" type="audio/ogg"/>
+    </audio>
+
+<!-- --- Users can press the back button to the previous page --- -->
+	<script>
+	function goBack() {
+    window.location.href = "report.html";
+	}
+	</script>
+    <br/><br/>
+    <button onclick="goBack()" class="backbtn">Back</button>
+    
+</body>
+</html>
